@@ -1,22 +1,19 @@
 body {
   background-color: beige;
-  position: relative;
-} 
-
-.trafficLights {
-  position:absolute; 
 } 
 
 .trafficHold {
+  display: flex;
   border: 6px solid black;
-  margin-left: 2rem;
-  position:relative;
+  margin-left: 2rem; 
+  position:relative; 
   height: 100px;
   width: 0px ;
 } 
 
 .wrapper {
   background-color: black;
+  position: relative; 
   width: fit-content;
   border-radius: 10%;
  
@@ -27,5 +24,5 @@ body {
 }
 
 .glow {
-  box-shadow: 0 0 9px 5px #48abe0;
+  box-shadow: 0 0 15px 15px #48abe0;
 }
