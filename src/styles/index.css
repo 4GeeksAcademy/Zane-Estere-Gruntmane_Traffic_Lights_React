@@ -1,12 +1,25 @@
 body {
- background: cornflowerblue; 
-};
+  background-color: beige;
+}
 
-.verticalLine {
-    border-left: 10px solid black; 
-    height: 100px;
-  };
+.trafficLight {
+  display: flex;
+  flex-direction: column;
+  
+}
 
-.wrapper { 
-    margin-top: 100px; 
+.trafficHold {
+  border: 4px solid black;
+  position:relative;
+  height: 100px;
+  width: 0px ;
+}
+
+.wrapper {
+  border: 3px solid black;
+}
+
+.fa-solid {
+  margin: 1.5rem;
+
 }

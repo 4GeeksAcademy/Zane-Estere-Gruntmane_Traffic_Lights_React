@@ -6,7 +6,7 @@ import ReactDOM from "react-dom";
 import "../styles/index.css";
 
 //import your own components
-import LightsFrame from "./component/LightsFrame.jsx";
+import Lights from "./component/Lights.jsx";
 
 //render your react application
-ReactDOM.render(<LightsFrame />, document.querySelector("#app"));
+ReactDOM.render(<Lights/>, document.querySelector("#app"));
