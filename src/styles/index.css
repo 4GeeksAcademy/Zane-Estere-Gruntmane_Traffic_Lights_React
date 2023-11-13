@@ -2,21 +2,19 @@ body {
   background-color: beige;
 }
 
-.trafficLight {
-  display: flex;
-  flex-direction: column;
-  
-}
-
 .trafficHold {
-  border: 4px solid black;
+  border: 6px solid black;
+  margin-left: 2rem;
   position:relative;
   height: 100px;
   width: 0px ;
 }
 
 .wrapper {
-  border: 3px solid black;
+  background-color: black;
+  width: fit-content;
+  border-radius: 10%;
+ 
 }
 
 .fa-solid {
