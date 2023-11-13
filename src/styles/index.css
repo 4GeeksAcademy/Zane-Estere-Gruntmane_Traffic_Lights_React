@@ -1,6 +1,11 @@
 body {
   background-color: beige;
-}
+  position: relative;
+} 
+
+.trafficLights {
+  position:absolute; 
+} 
 
 .trafficHold {
   border: 6px solid black;
@@ -8,16 +13,19 @@ body {
   position:relative;
   height: 100px;
   width: 0px ;
-}
+} 
 
 .wrapper {
   background-color: black;
   width: fit-content;
   border-radius: 10%;
  
+} 
+
+.sign {
+  margin: 1.5rem;
 }
 
-.fa-solid {
-  margin: 1.5rem;
-
+.glow {
+  box-shadow: 0 0 9px 5px #48abe0;
 }
