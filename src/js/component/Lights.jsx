@@ -1,10 +1,11 @@
 import React from "react";
 
-const Lights = ({ redLight, yellowLight, greenLight, onClickRed, onClickYellow, onClickGreen, cycleLights }) => {
+const Lights = ({ redLight, yellowLight, greenLight, onClickRed, onClickYellow, onClickGreen, onClickcycleLights, OnClickPurpleLight }) => {
   let red = <i className={`sign ${redLight} fa-solid fa-circle fa-2xl`} style={{ color: "#cc1515" }}></i>;
   let yellow = <i className={`sign ${yellowLight} fa-solid fa-circle fa-2xl`} style={{ color: "#f6fa0d" }}></i>;
   let green = <i className={`sign ${greenLight} fa-solid fa-circle fa-2xl`} style={{ color: "#38f00f" }}></i>;
   let cycle = <i className={`fa-solid fa-spinner fa-spin fa-lg`} style={{color: "#f7f7f8"}}></i>;
+  let purple = <i className={`fa-solid fa-circle`} style={{color: "#9711d4"}}></i>
   return (
 
     <div className="container-fluid d-flex flex-column align-items-center">
@@ -14,7 +15,8 @@ const Lights = ({ redLight, yellowLight, greenLight, onClickRed, onClickYellow, 
         <div className="yellowLight" onClick={onClickYellow}>{yellow}</div>
         <div className="greenLight" onClick={onClickGreen}>{green}</div>
       </div>
-      <button className="cycleLight btn btn-dark mt-3" onClick={cycleLights}>{cycle} </button>
+      <button className="cycleLight btn btn-dark mt-3" onClick={onClickcycleLights}>{cycle} </button>
+      <button className="purpleLight btn btn-dark mt-3" onClick={OnClickPurpleLight}>{purple}</button>
     </div>
 
 
