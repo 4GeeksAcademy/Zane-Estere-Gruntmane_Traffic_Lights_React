@@ -3,6 +3,7 @@ import Lights from "../component/Lights.jsx";
 
 const TrafficLights = () => {
   const [selectedLight, setSelectedLight] = useState("");
+  const [availableColors, setAvailableColors] = useState(["red", "yellow", "green"]);
   
   const handleLightClick = (color) => {
     setSelectedLight(color);
@@ -12,6 +13,10 @@ const TrafficLights = () => {
     const colors = ["red", "yellow", "green"];
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     setSelectedLight(randomColor);
+  };
+
+  const handleAddPurpleLight = () => {
+    setAvailableColors([...availableColors, "purple"]);
   };
 
   return (
@@ -25,6 +30,7 @@ const TrafficLights = () => {
         onClickYellow={() => handleLightClick("yellow")}
         onClickGreen={() => handleLightClick("green")}
         onClickcycleLights={handleRandomColorClick}
+        OnClickPurpleLight={() => handleAddPurpleLight ("purple")} 
       />
       
     </div>
