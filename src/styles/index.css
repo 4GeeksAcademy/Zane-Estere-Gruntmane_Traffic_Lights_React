@@ -5,7 +5,6 @@ body {
 .trafficHold {
   display: flex;
   border: 6px solid black;
-  margin-left: 2rem; 
   position:relative; 
   height: 100px;
   width: 0px ;

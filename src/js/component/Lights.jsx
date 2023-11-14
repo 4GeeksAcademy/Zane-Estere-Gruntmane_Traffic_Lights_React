@@ -7,7 +7,7 @@ const Lights = ({ redLight, yellowLight, greenLight, onClickRed, onClickYellow, 
 
   return (
     
-    <div className="container-fluid d-flex flex-column align-self-center col-sm-6 col-md-6 col-lg-6">
+    <div className="container-fluid d-flex flex-column align-items-center">
       <div className="trafficHold col-sm-1 col-md-1 col-lg-1"></div>
       <div className="wrapper col-sm-1 col-md-1 col-lg-1">
         <div className="redLight" onClick={onClickRed}>{red}</div>
